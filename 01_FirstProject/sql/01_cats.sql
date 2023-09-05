@@ -1,4 +1,4 @@
-# Tabelle anlegen
+-- Tabelle anlegen
 
 CREATE TABLE IF NOT EXISTS `mydb`.`cats` (
   `id` INT NOT NULL AUTO_INCREMENT,
@@ -10,9 +10,9 @@ ENGINE = InnoDB;
 -- Struktur
 DESCRIBE mydb.cats;
 
-# Inserts
+-- Inserts
 INSERT INTO `mydb`.`cats` (`id`, `name`, `age`) VALUES (DEFAULT, "Grizabella", 29);
-INSERT INTO `mydb`.`cats` (`id`, `name`, `age`) VALUES (DEFAULT, "Analonzo", 35);
+INSERT INTO `mydb`.`cats` (`id`, `name`, `age`) VALUES (DEFAULT, "Alonzo", 35);
 
 -- Anzeige
 SELECT * FROM mydb.cats;

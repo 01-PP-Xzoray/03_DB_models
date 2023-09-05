@@ -1,4 +1,4 @@
-# Tabelle anlegen
+-- Tabelle anlegen
 
 CREATE TABLE IF NOT EXISTS `mydb`.`users` (
   `id` INT NOT NULL AUTO_INCREMENT,
@@ -12,10 +12,11 @@ ENGINE = InnoDB;
 DESCRIBE mydb.users;
 
 -- Inhalte
-
+INSERT INTO `mydb`.`users` (`id`, `user`, `create_time`) VALUES (DEFAULT, "Ingo", DEFAULT);
 INSERT INTO `mydb`.`users` (`id`, `user`, `create_time`) VALUES (DEFAULT, "Sohrab", DEFAULT);
-INSERT INTO `mydb`.`users` (`id`, `user`, `create_time`) VALUES (DEFAULT, "Cagri", DEFAULT);
-INSERT INTO `mydb`.`users` (`id`, `user`, `create_time`) VALUES (DEFAULT, "Chai", DEFAULT);
+INSERT INTO `mydb`.`users` (`id`, `user`, `create_time`) VALUES (DEFAULT, "Jeniffer", DEFAULT);
 
 -- Anzeige
 SELECT * FROM mydb.users;
+
+
